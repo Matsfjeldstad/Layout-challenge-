@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  max-width: 987px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #76e4eb;
+  height: 48px;
+}
+.hero-banner {
+  background-color: #315fa4;
+  height: 420px;
+}
+.purple-bar {
+  display: block;
+  background-color: #ca1dcd;
+  height: 220px;
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #c01887;
+  height: 162px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 767px) {
+  .purple-bar {
+    display: inline-block;
+    background-color: #ca1dcd;
+    height: 220px;
+    width: 31.7%;
+    margin-right: 1.25rem;
+  }
+
+  #bar1 {
+    margin: 0em;
+  }
+}
