@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.inner {
+  max-width: 987px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 48px;
+  background-color: #76e4eb;
+}
+
+.footer {
+  background-color: #c01887;
+  height: 162px;
+  margin-top: 20px;
+}
+
+.hero {
+  background-color: #315fa4;
+  height: 280px;
+  margin-bottom: 20px;
+}
+
+.left-content {
+  height: 894px;
+  width: 23.4%;
+  background-color: #315fa4;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.right-content {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card-container {
+  display: block;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+.card {
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.box {
+  background-color: #1dcd79;
+  width: 231px;
+  height: 320px;
+}
+
+.smaller-box {
+  background-color: #1dcd79;
+  width: 231px;
+  height: 81px;
+  margin-top: 5px;
+}
+
+.line {
+  background-color: #76e4eb;
+  height: 36px;
+  width: 732px;
+}

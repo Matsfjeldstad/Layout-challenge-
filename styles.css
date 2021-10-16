@@ -9,36 +9,68 @@ body {
 }
 
 .header {
-  background-color: #76e4eb;
   height: 48px;
+  background-color: #76e4eb;
 }
-.hero-banner {
-  background-color: #315fa4;
+
+.hero {
   height: 420px;
+  background-color: #315fa4;
 }
-.purple-bar {
+
+.columns-container {
   display: block;
+}
+
+.column {
   background-color: #ca1dcd;
   height: 220px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
-
 .footer {
   background-color: #c01887;
   height: 162px;
-  margin-top: 20px;
 }
 
-@media screen and (min-width: 767px) {
-  .purple-bar {
-    display: inline-block;
-    background-color: #ca1dcd;
-    height: 220px;
-    width: 31.7%;
-    margin-right: 1.25rem;
+.column2 {
+  background-color: #ca1dcd;
+  height: 460px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.column2:nth-child(2) {
+  height: 220px;
+}
+@media screen and (min-width: 768px) {
+  .columns-container {
+    overflow: hidden;
+    white-space: nowrap;
   }
 
-  #bar1 {
-    margin: 0em;
+  .column {
+    display: inline-block;
+    width: 31.5%;
+    margin-right: 1.25em;
+  }
+
+  .column:nth-child(3) {
+    margin-right: 0%;
+    float: right;
+  }
+
+  .column2 {
+    display: inline-block;
+    height: 220px;
+    margin-right: 20px;
+  }
+
+  .column2:nth-child(1) {
+    width: 40.6875em;
+  }
+
+  .column2:nth-child(2) {
+    width: 19.6875em;
   }
 }
