@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
 }
 
 .inner {
@@ -9,28 +11,98 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  align-items: center;
   height: 48px;
-  background-color: #76e4eb;
+  background-color: #fff;
+}
+
+.header-logo {
+  height: 30px;
+}
+.hamburger-menu {
+  height: 20px;
+}
+
+nav {
+  display: none;
+}
+
+.navbar {
+  color: #444;
 }
 
 .hero {
   height: 420px;
-  background-color: #315fa4;
+  background-image: url(/img/unsplash_w7WVYjY8c5w.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.hero h2 {
+  font-size: 24px;
+  font-weight: 400;
 }
 
+.hero-text {
+  position: relative;
+  top: 70%;
+  margin-left: 20px;
+}
 .columns-container {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #ca1dcd;
   height: 220px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.column h2 {
+  font-weight: 200;
+}
+
+.column:nth-child(1) {
+  background-image: url(/img/hund.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.column:nth-child(2) {
+  background-image: url(/img/lizzard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.column:nth-child(3) {
+  background-image: url(/img/butterfly.jpg);
+  background-size: cover;
+}
+
 .footer {
-  background-color: #c01887;
-  height: 162px;
+  background-color: #444;
+}
+
+.footer-links{
+  margin: 0;
+}
+
+.footer .footer-links li{
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 300;
 }
 
 .column2 {
@@ -43,34 +115,48 @@ body {
 .column2:nth-child(2) {
   height: 220px;
 }
+
+.footer-links li{ 
+  text-decoration: none;
+  list-style: none;
+  font-weight: 400;
+  margin: 19px;
+
+}
+
 @media screen and (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   .columns-container {
-    overflow: hidden;
-    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   .column {
-    display: inline-block;
-    width: 31.5%;
-    margin-right: 1.25em;
+    flex:1;
   }
 
-  .column:nth-child(3) {
-    margin-right: 0%;
-    float: right;
+  .column:nth-child(2){
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .column2 {
-    display: inline-block;
+    display: flex
     height: 220px;
     margin-right: 20px;
   }
 
-  .column2:nth-child(1) {
-    width: 40.6875em;
-  }
 
-  .column2:nth-child(2) {
-    width: 19.6875em;
-  }
-}
